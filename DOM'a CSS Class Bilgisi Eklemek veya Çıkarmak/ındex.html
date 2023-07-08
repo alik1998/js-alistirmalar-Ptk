@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mavi {
+            color: blue;
+        }
+        .arka-plan {
+            background-color: red;
+        }
+        .info {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greering" class="standart">Patika-alştırma-ali-js</h1>
+    <script>
+        var greering = document.querySelector("#greering");
+
+        greering.classList.add("mavi");
+        greering.classList.add('info','visible','arka-plan');//add() : HTML öğesine bir veya daha fazla class ekler.
+
+        // greering.classList.remove('visible','info');//remove() : HTML öğesinden bir veya daha fazla class'ı siler.
+
+        // var item =greering.classList.item(2);
+        // console.log(item); //item() : HTML de class'ı verilen index sırasına göre döndürür. Eğer index, class length'inden (sayısından) daha büyük veya length'ine eşit olursa undefined döner
+
+        // var contains = greering.classList.contains("mavi");
+        // console.log(contains);
+        //contains() : Element verilen class'ı içeriyorsa true, içermiyorsa false döner. Bu sayede bir işlem yaptırmadan önce kontrol edebiliriz.
+
+        // let toggle = greering.classList.toggle("mavi");
+        // console.log(toggle);// boolean verisi dödürür       
+            
+        //Toggle() : classList.add() ve classList.remove() yöntemini aynı anda çağırmak yerine classList.toggle() yöntemini kullanılabilir. 
+        
+        // greering.classList.replace("mavi","info")
+        //replace() : Bir CSS sınıfını başka bir sınıfla değiştirmek için kullanılır.
+
+        let length = greering.classList.length;
+        console.log(length);
+        //length() : Bir öğede bulunan sınıf sayısını bilmemizi sağlar.
+
+        //console.log(greering.classList);//.classList consoleda DOMTokenList döndürür busekilde manuel kontrol oluşturabilirsin.
+    </script>
+</body>
+</html>
+
+

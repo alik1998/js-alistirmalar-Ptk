@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            text-align: center;
+            background-color: gray;
+        }
+        .stl {
+            color: orange;
+
+        }
+    </style>
+</head>
+<body>
+    <img
+        src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+        alt=""
+        class="rounded"
+      />
+      <h3 id="baslik" class="stl">KODLUYORUZ-ÖDEV</h3>
+      <div class="stl">MERHABA <strong><span id="Myname"></span></strong>Hoşgeldin</div>
+      <div class="stl"><p id="zaman" ></p></div>
+      <p class="stl"> <strong> tarihinde Kodluyoruz Frontend Web Development Patikası</strong>'nın
+        Javascript bölümü 1. Ödevindesiniz.</p>
+      
+    
+    
+    
+    
+
+
+  <script>
+    
+    var bilgi = prompt('adinizi girin'); 
+    var myname = document.getElementById("Myname") ;
+    myname.innerHTML = `${bilgi} !`;
+  
+    
+   function time(){
+        
+        var simdi = new Date();// anlık zaman bilgisi
+                
+                var hour = simdi.getHours();
+                var min = simdi.getMinutes();
+                var sec = simdi.getSeconds();
+
+                var day = simdi.getDay();
+                
+                     
+                hour = (hour < 10) ? "0" + hour : hour;
+                min = (min < 10) ? "0" + min : min;
+                sec = (sec < 10) ? "0" + sec : sec;
+
+                let hafta = ["pazar","pazartesi","sali","çarsamba","persembe","cuma","cumaertesi"]
+                
+                var    günday = hafta[day];
+                document.getElementById('zaman').innerHTML=hour+":"+min+":"+sec+"--"+günday;            
+                
+    }            
+    setInterval(time,1000);
+   
+      
+    
+    
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Soru, bir tamsayı olan "n" değerini alacak ve aşağıdaki koşullara göre bir çıktı verecektir:
+
+
+
+"n" çift sayı ve 6 ile 20 arasında ise "Weird" yazdırılacaktır.
+"n" çift sayı ve 20'den büyük ise "Not Weird" yazdırılacaktır. -->
+<script>
+    var n = prompt("tamsayı girin");
+
+    // "n" tek sayı ise "Weird" yazdırılacaktır.
+    if (n % 2 == 1) {
+        console.log("wired" + "tek-sayi"+"kalan = 1");
+    }
+
+    // "n" çift sayı ve 2 ile 5 arasında ise "Not Weird" yazdırılacaktır.
+    else if ((n % 2 == 0)&&((n > 2)&&(n < 5))) {
+        console.log("Not Weird"+ "" + "çift-sayi"+ "5 > n > 2");
+    }
+    // "n" çift sayı ve 6 ile 20 arasında ise "Weird" yazdırılacaktır.
+    else if ((n % 2 == 0)&&((n > 6)&&(n < 20))) {
+        console.log("Not Weird"+ "" + "çift-sayi"+"20 > n > 6");
+    }
+    // "n" çift sayı ve 20'den büyük ise "Not Weird" yazdırılacaktır. -->
+    else if ((n % 2 == 0)&&(n > 20)) {
+        console.log("Not Weird"+ "" + "çift-sayi"+"n>20");
+    }
+    else{
+        console.log("sayı gir")
+    }
+</script>
+  </body>
+</html>
